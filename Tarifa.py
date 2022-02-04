@@ -1,14 +1,17 @@
-# Not done
-
-def getMegabytes(mb, used):
-    leftoverMegabytes = mb - used
+def getMegabytes(usedMegabytes, megabytes):
+    leftoverMegabytes = megabytes - usedMegabytes
+    return leftoverMegabytes
 
 def availableMegabytes():
-    X = int(input())
-    N = int(input())
-    P = int(input())
-    pass
+    availableMegabytes = int(input())
+    nrOfMonths = int(input())
+    nextMonth = availableMegabytes # refresh megabytes for the upcoming month
+    for _ in range(nrOfMonths):
+        spentMegabytes = int(input())
+        leftoverMegabytes = getMegabytes(spentMegabytes, availableMegabytes)
+        nextMonth += leftoverMegabytes
 
+    print(nextMonth)
 
 if __name__ == '__main__':
     availableMegabytes()
