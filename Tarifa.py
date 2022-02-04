@@ -1,9 +1,7 @@
+# Not done
+
 def getMegabytes(mb, used):
     leftoverMegabytes = mb - used
-
-
-
-
 
 def availableMegabytes():
     X = int(input())

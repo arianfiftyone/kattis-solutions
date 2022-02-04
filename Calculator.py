@@ -1,5 +1,7 @@
 import sys
 
+# whack, not accepted sadface
+
 def findNextParanthesesIndex(start, inputNR):
     for index in range(len(inputNR)):
         if inputNR[index] == '(':
