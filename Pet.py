@@ -1,7 +1,7 @@
 maxScore = 0
 allContestants = 5
 
-for persons in range(0, allContestants):
+for persons in range(allContestants):
     currentScore = 0
     grades = input().split()
     for i in range(len(grades)):

@@ -1,10 +1,10 @@
 
 def abracadabra():
     N = int(input())
-    string = 'Abracadabra'
+    ABRACADABRA = 'Abracadabra'
     for index in range(N):
-        newString = str(index+1) + ' ' + string
-        print(newString)
+        outputString = str(index+1) + ' ' + ABRACADABRA
+        print(outputString) # print output every loop
         
 if __name__ == '__main__':
     abracadabra()
