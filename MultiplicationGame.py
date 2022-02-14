@@ -13,7 +13,6 @@ def winnerMultGame(data):
             data = math.ceil(data/9)
             turn = True
 
-
         turns += 1
 
     if turns % 2:
