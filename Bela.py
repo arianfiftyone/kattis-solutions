@@ -8,7 +8,7 @@ def bela():
 
     sum = 0
 
-    for index in range(nHands*4):
+    for _ in range(nHands*4):
         plays = input()
 
         if plays[1] == domSuit:
