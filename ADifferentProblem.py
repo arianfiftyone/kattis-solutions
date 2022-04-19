@@ -1,15 +1,9 @@
+while True:
+    try:
+        numbers = input().split()
+    except EOFError:
+        break
 
-
-def adp():
-
-    inp = input().split()
-
-    first = int(inp[0])
-    second = int(inp[1])
-
-    res = abs(first - second)
-
-    print(res)
-
-if __name__ == '__main__':
-    adp()
+    number1 = int(numbers[0])
+    number2 = int(numbers[1])
+    print(abs(number1 - number2))
